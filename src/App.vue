@@ -64,10 +64,10 @@ export default {
   name: 'App',
   data() {
     return {
-      gridWidth: 12,
-      newGridWidth: 12,
-      totalColors: 3,
-      newTotalColors: 3,
+      gridWidth: 16,
+      newGridWidth: 16,
+      totalColors: 4,
+      newTotalColors: 4,
       selectedColor: undefined,
       step: 0,
       grid: [],
@@ -231,7 +231,7 @@ export default {
   },
   computed: {
     maxAttempts() {
-      return Math.ceil(this.gridWidth * this.totalColors * 0.3);
+      return Math.ceil(this.gridWidth * this.totalColors * 0.29);
     },
     messageStyle() {
       if (this.message === "") {
